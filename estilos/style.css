@@ -1,0 +1,626 @@
+:root{
+    --primary: #142035 !important;
+    --secundary: #e2bd20;
+    --terciary: #f0ecec;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+section{
+    height: 900px;
+}
+
+p-custom{
+    font-size:70%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-on-scroll {
+    opacity: 0; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease forwards; 
+  }
+  
+
+h1{
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2{
+    font-weight: 900;
+    font-size:larger;
+}
+
+h3{
+    font-weight: 0;
+    font-size: 30px;
+    color: #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:visited {
+    color: rgb(255, 171, 3); 
+  }
+
+nav a {
+    color:rgb(255, 171, 3); 
+  }
+
+  nav a:active {
+    color:rgb(255, 171, 3); 
+  }
+.navbar{
+    min-height: 90px;
+    background: #142035;
+
+    padding: 5px;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar  ul li a {
+    color: #f0ecec;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.navbar ul li a:hover {
+    color: #e2bd20;
+}
+
+.btn-secundary{
+    background-color: var(--secundary);
+    border-color: var(--secundary);
+    color: aliceblue;
+}
+
+.content {
+    max-width: 500px;
+}
+
+
+.texto-justificado{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.texto-izquierdo{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.contenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+
+.column{
+    flex-basis: 33.33%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+form{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.centro {
+    max-width: max-content;
+    text-align: center;
+}
+
+.cuadro {
+    
+    text-align: center;
+    background: var(--terciary);
+    padding-top: 5%;
+    margin-top: 8%;
+}
+
+section{
+    height: 900px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.step{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.fotoprincipal{
+    padding-top: 180px;
+
+
+}
+
+.form-control{
+
+    background: var(--terciary);
+    border-color: var(--secundary);
+    border-width:0.1cm
+
+}
+
+.bloque{
+
+    width: max-content;
+    position: absolute;
+    
+}
+
+
+@media (max-width: 992px){
+
+    .navbar{
+        position: relative !important;
+    }
+    section {
+        height: unset;
+    }
+}
+
+/* Footer */
+
+#footer {
+    background-color: var(--primary) !important;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#footer h5{
+	padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:var(--terciary);
+    font-style: bold;
+}
+h4{
+    font-size: smaller;
+    color: #f0ecec;
+    font-family: 'Nunito', sans-serif;
+}
+h5{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    color: #f0ecec;
+}
+
+h6{
+    font-size:x-small;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: var(--primary) !important;
+    padding: 80px 0;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image-container img {
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    opacity: 0.7;
+}
+
+.icono-container{
+    position: relative;
+    display: inline-block;
+
+}
+
+.texto-movimiento {
+    display: inline-block;
+    transition: transform 0.3s ease-out; /* Transición suave */
+  }
+  
+  .texto-movimiento:hover {
+    transform: translateX(10px); /* Movimiento cuando se pasa el mouse */
+  }
+
+.icono-container img{
+    transition: transform 0.3s ease;
+}
+
+.icono-container:hover img {
+    transform: translateX(5px) translateY(-5px);
+}
+
+
+.container1{
+    margin-left: 8%;
+}
+
+
+.btn-custom{
+    background-color: var(--secundary);
+    border-color: var(--secundary);
+    color: aliceblue;
+}
+
+
+.btn-custom {
+    background-color: var(--secundary-dark);
+    color: white; 
+}
+
+
+.textos{
+
+    column-count:2;
+    column-gap:40px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+
+
+}
+
+
+.wrap{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: url(icono\ e\ imagenes/principalqr.png);
+    background-size:cover;
+    background-position: center;
+}
+
+
+.wrap-texto{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    margin-left: 8%;
+    padding-left:10%;
+    right: 60%;
+    background-size:cover;
+}
+
+#container2  {  /* titulo intermedio Servicios */
+    min-height: 200px; /* Establece una altura mínima para el contenedor en píxeles */
+    background-color:#FFFFFF;
+    
+}
+
+#container2 h1 { /* ajuste del margen color del titulo intermedio */
+    color: rgb(18, 3, 3); /* Cambia "red" al color deseado */
+    font-size: 50px; /* Cambia el tamaño de fuente deseado */
+    /* Otros estilos que desees aplicar al h1 */
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.card-img-top { /* card 3 imagenes interemdias  */
+    width: 100%; /* Ancho fijo al 100% */
+    height: 300px; /* Altura fija, ajusta según tus preferencias */
+    object-fit: cover; /* Escala la imagen para llenar el espacio sin distorsión */
+}
+
+#container5 .card-body h5.card-title {
+    font-weight: bold;
+}
+
+.card {
+    margin-left: 50px; /* Margen a la izquierda de cada tarjeta */
+    margin-right: 50px; /* Margen a la derecha de cada tarjeta */
+   
+}
+
+#container3 h1 { /* titulo intermedio 2*/
+    color: rgb(18, 3, 3); /* Cambia "red" al color deseado */
+    font-size: 50px; /* Cambia el tamaño de fuente deseado */
+    /* Otros estilos que desees aplicar al h1 */
+    text-align: center;
+    margin-top: 100px;
+}
+
+.separate-image {
+    margin-top: 110px;
+}
+
+#container4  {
+  
+    margin-top: 100px;
+
+}
+
+/* formulario 2*/ /* texto izquierdo formulario */
+#container4 > .row > .col-md-6.col-lg-5 {
+    border-left: 2px solid hsl(28, 88%, 48%); /* Cambia el grosor y el color del borde según tus preferencias */
+    padding-left: 30px; /* Añade un espacio a la izquierda del texto para separarlo del borde */
+    height: 4%; /* Ajusta la longitud del borde vertical según tus necesidades */
+    font-size: 24px; /* Cambia el tamaño de fuente deseado */
+    margin-bottom: 12px; /* Añade un margen inferior de 20px entre los párrafos */
+    
+}
+
+.custom-input {
+    border-color: #f48a21; /* Cambia el color del borde a naranja */
+    border-width: 2px; /* Cambia el valor a tu preferencia para un borde más grueso */
+    width: 330px; /* Puedes cambiar este valor según tus necesidades */
+    background-color: #ffffff; /* Cambia el color de fondo a blanco */
+    
+}
+
+.custom-button {
+    margin-top: 30px;; /* Establece el margen en 0 para eliminar el espacio alrededor de los botones */
+    float: right; /* Hace que el botón flote a la derecha */
+    width: 150px; /* Ajusta el ancho del botón según tus preferencias */
+    background-color: #f48a21; /* Cambia el color de fondo del botón a #f48a21 */
+    color: #ffffff; /* Cambia el color del texto a blanco para contrastar con el fondo */
+    align-self: flex-end;
+
+
+}
+
+#container4 h2 {
+  
+    font-size: 31px; /* Cambia el tamaño de fuente deseado */
+    margin-bottom: 60px; /* Añade un margen inferior de 20px entre los párrafos */
+    
+}
+
+.form-label strong {
+    /* Elimina la propiedad que establece la negrita */
+    font-weight: normal;
+}
+
+
+
+
+.bold-number {
+    font-weight: bold; 
+    /* Otros estilos que desees aplicar solo a los números en negrita */
+    color: black; /* Ejemplo: cambiar el color a rojo */
+}
+
+
+
+#container6 h1 { /* titulo intermedio 2*/
+    color: rgb(18, 3, 3); /* Cambia "red" al color deseado */
+    font-size: 50px; /* Cambia el tamaño de fuente deseado */
+    /* Otros estilos que desees aplicar al h1 */
+    text-align: center;
+    margin-top: 180px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white; /* Estilo del texto */
+    font-size: 70px; /* Tamaño del texto */
+    
+}
+
+
+
+/* style for page hogar*/
+
+.bg-gray{
+    background-color: #F5F5F5;
+
+}
+
+.txt-yelow{
+
+    color: #e2bd20;
+}
+
+
+
+
+.slick-slide {
+    margin: 0px 20px;
+    }
+    .slick-slide img {
+    width: 50%;
+    }
+    /*
+    .slick-slider
+    {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    } */
+    .slick-list
+    {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    }
+    .slick-list:focus
+    {
+    outline: none;
+    }
+    .slick-list.dragging
+    {
+    cursor: pointer;
+    cursor: hand;
+    }
+    .slick-slider .slick-track,
+    .slick-slider .slick-list
+    {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+    .slick-track
+    {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    }
+    .slick-track:before,
+    .slick-track:after
+    {
+    display: table;
+    content: '';
+    }
+    .slick-track:after
+    {
+    clear: both;
+    }
+    .slick-loading .slick-track
+    {
+    visibility: hidden;
+    }
+    .slick-slide
+    {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    }
+    [dir='rtl'] .slick-slide
+    {
+    float: right;
+    }
+    .slick-slide img
+    {
+    display: block;
+    }
+    .slick-slide.slick-loading img
+    {
+    display: none;
+    }
+    .slick-slide.dragging img
+    {
+    pointer-events: none;
+    }
+    .slick-initialized .slick-slide
+    {
+    display: block;
+    }
+    .slick-loading .slick-slide
+    {
+    visibility: hidden;
+    }
+    .slick-vertical .slick-slide
+    {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+    }
+    .slick-arrow.slick-hidden {
+    display: none;
+    }
+
+    .custom-margin {
+        margin-right: 30px; /* Ajusta el valor según sea necesario */
+    }
+
+
+        
+.levantar img {
+    transition: transform 0.2cs ease-in-out;
+}
+
+.levantar img:hover {
+    transform: translateY(-10px); 
+}
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.imagen-agrandar {
+    transition: transform 0.3s; /* Agrega una transición suave para el efecto */
+}
+
+.imagen-agrandar:hover {
+    transform: scale(1.5); /* Agrandar la imagen al 110% del tamaño original */
+}
