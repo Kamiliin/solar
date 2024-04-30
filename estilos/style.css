@@ -624,8 +624,6 @@ h6{
 .imagen-agrandar:hover {
     transform: scale(1.5); /* Agrandar la imagen al 110% del tamaño original */
 }
-
-
 @keyframes slideFromLeft {
     from {
       transform: translateX(-100%);
@@ -659,12 +657,20 @@ h6{
     }
   }
   
+  /* Estado predeterminado de las tarjetas para todos los tamaños */
   .card-animate {
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.5s ease-out;
+    opacity: 1; /* Asegura que las tarjetas sean visibles */
   }
   
-  .card1.animate { animation: slideFromLeft 0.7s forwards; }
-  .card2.animate { animation: slideFromBottom 0.7s forwards; }
-  .card3.animate { animation: slideFromRight 0.7s forwards; }
+  @media (min-width: 992px) {
+    /* Aplicar animaciones solo en pantallas grandes (PCs) */
+    .card-animate {
+      opacity: 0; /* Inicia invisible para la animación */
+      transition: opacity 0.3s ease, transform 0.5s ease-out;
+    }
+    
+    .card1.animate { animation: slideFromLeft 0.7s forwards; }
+    .card2.animate { animation: slideFromBottom 0.7s forwards; }
+    .card3.animate { animation: slideFromRight 0.7s forwards; }
+  }
   
